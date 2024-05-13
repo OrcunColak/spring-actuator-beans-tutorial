@@ -1,4 +1,4 @@
-package com.colak.springactuatorhealthtutorial.controller;
+package com.colak.springactuatortutorial.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
