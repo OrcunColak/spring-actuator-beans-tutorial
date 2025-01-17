@@ -11,5 +11,14 @@ Beans details like its scope, type, aliases, resource(class) and dependencies ar
 The original idea is from  
 https://medium.com/tuanhdotnet/ways-to-speed-up-spring-boot-application-startup-time-8c9b56435095
 
-This shows a detailed breakdown of the startup process, showing the initialization time for each bean, which can help you identify and resolve performance bottlenecks.
+This shows a detailed breakdown of the startup process, showing the initialization time for each bean, which can help you identify and resolve performance bottlenecks.  
 curl http://localhost:8080/actuator/startup
+
+Also use for faster startup
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-context-indexer</artifactId>
+    <optional>true</optional>
+</dependency>
+```
